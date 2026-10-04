@@ -1,0 +1,34 @@
+body {
+  background: black;
+  color: #00ff88;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(9, 45px);
+  gap: 2px;
+}
+
+input {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 18px;
+  background: black;
+  border: 1px solid #00ff88;
+  color: #00ff88;
+}
+
+input:disabled {
+  color: #888;
+}
+
+input.invalid {
+  border-color: #ff4d4d;
+  color: #ff4d4d;
+}
