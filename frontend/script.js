@@ -142,7 +142,7 @@ function isValid(row, col, num) {
 const params = new URLSearchParams(window.location.search);
 const roomId = params.get("room") || "default-room";
   
-const socket = new WebSocket(`ws://127.0.0.1:8000/ws/${roomId}`);
+const socket = new WebSocket(`wss://sudocrypt.onrender.com/ws/${roomId}`);
 socket.onopen = () => {
   console.log("Connected to server");
 };
